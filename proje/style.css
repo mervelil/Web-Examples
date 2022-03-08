@@ -1,0 +1,66 @@
+body{
+background:url(pexels-jacob-morch-425443.jpg);
+animation: image 10s infinite alternate;
+-webkit-animation: image 10s infinite alternate;
+-moz-animation: image 10s infinite alternate;
+}
+@keyframes image{
+    0%{
+        background: url(pexels-jacob-morch-425443.jpg);
+    }
+    50%{
+        background: url(pexels-nastia-92733.jpg);
+      
+    }
+    75%{
+        background: url(pexels-skitterphoto-688332.jpg);
+      
+    }
+    100%{
+        background: url(pexels-tim-gouw-443414.jpg);
+      
+    }
+
+}
+
+.col-sm-3{
+    flex: auto;
+    flex-direction: row;
+    
+}
+.col-md-3{
+    flex: auto;
+    flex-direction: row;
+    
+}
+.col-lg-3{
+    flex: auto;
+    flex-direction: row;
+  
+}
+.col-xl-3{
+    flex: auto;
+    flex-direction: row;
+  
+}
+@media all and (min-width: 992px) {
+	.dropdown-menu li{ position: relative; 	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{ display: block; }
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu{
+      margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+  }
+}	

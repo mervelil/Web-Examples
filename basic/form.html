@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+ <html lang =tr>
+     <head>
+         <meta charset="utf-8">
+         <title>first page</title>
+
+     </head>
+     <body>
+         <form action="" method="GET" id="form1">
+             <fieldset>
+                 <legend>GİRİS YAP</legend>
+        <label  for="kadi">Kullanici adı</label>
+        <input  placeholder="Kullancı adınızı girin" required maxlength="6" id="kadi" type="text" > <br>
+        enabled olursa deperı tutp gondermıyor readonly yazarsan hallolur ve 
+        value="ada" text alanı direk o degerle gelmıs olcak <br>
+        <label for="Sifre">Sifre</label>
+        <input  required id ="Sifre" type="password"><br>
+        <label for="eposta">eposta</label>
+        <input type="email" required id="eposta"> <br>
+    </fieldset>
+        <input type="number" min="5" max="15"> <br> 
+        <input type="url" required><br>
+         <input id="dosya" type="file" name="dosya[]" multiple accept="image/*"> <br>
+        <br>
+        <label >
+         <input required type="checkbox"> Kuralları kabul ediyorum.
+         (labela dokununcada kutu check olur)
+          (multiole accesss sayesinde tek degil birden cok dosya secilebilir)
+        degeri almak icin gettin altında olmalı fielsette form calısmaz
+         </label><br>
+        <label>
+            <input type="radio" name ="secenek"  required value="Option1">Option1 
+        </label>
+        <label>
+            <input type="radio" name ="secenek" required value="Option2" checked value ="Option2">Option2
+        </label> <br>
+        <input type="hidden" name="form" id="form">
+        arkaplandakı kodda bilgileri  alabılırsın
+        <input type="submit"  formtarget=_blank value="Send"> <br>
+        <input type="reset" value="Sıfırla"> <br>
+    </form>
+    <br><br><br><br>
+    <input type="color"> <br>
+    <input type="date"> <br>
+    <input type="datetime-local"> <br>
+    <input type="month"> <br> 
+    <input type="range" min="5" max="15" step="5"> <br> 
+    <input type="search" autofocus> <br>  
+     direk google ya da youtube focus aramak vkmak i 
+    <input type="tel"> <br>
+    <input type="time"> <br>
+    <input type="url"> <br>
+    <input list="diller">
+    <datalist id="diller" name="diller" form="form1">
+            </option value="HTML"> 
+            </option  value="CSS"> 
+            </option value="JAVASCRİPT"> 
+    </datalist> <br><br>
+    <select name="dil[]" multiple size="7">
+        <optgroup label="Front-end dilleri">
+            <option value="css">CSS</option>
+            <option  selected value="css">HTML</option>
+            <option value="css">JS</option>
+        </optgroup>
+        <optgroup label="Back-end dilleri">
+            <option value="php">php</option>
+            <option value="python">python</option>
+            <option value="css">JS</option>
+        </optgroup>
+    </select> <br> <br>
+    <textarea name="" id="" cols="80" rows="40"></textarea>
+    <button type="button">Gonder</button>
+     </body>
+ </html>
